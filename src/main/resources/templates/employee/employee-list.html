@@ -10,11 +10,13 @@
 </head>
 <body>
 <th:block th:insert="fragment/header"></th:block>
-<h1 class="text-3xl font-bold underline text-clifford">
-    Hello world!
-</h1>
+
 <h1>Employee List(<span th:text="${employeeList.size()}"></span>) </h1>
+
 <div class="container-fluid">
+    <div class="">
+        <a th:href="@{/employees/add}" class="btn btn-primary">Add</a>
+    </div>
     <div class="row">
         <div class="col-lg-12 mt-4 p-2">
             <div class="my-3">
